@@ -1,0 +1,42 @@
+.popular-place-container .image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    box-shadow: 10px 8px 6px -4px rgba(0, 0, 0, 0.4);
+
+    backface-visibility: hidden;
+    transition: .5s ease;
+}
+  
+.dest-img-container {
+  position: relative;
+}
+
+.popular-place-container .details-overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dest-img-container:hover .details-overlay {
+  opacity: 1;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}

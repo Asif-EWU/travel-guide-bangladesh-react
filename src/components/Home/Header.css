@@ -1,0 +1,21 @@
+.headermain {
+    height: 900px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-image: url('../../images/carousel/carouselBg.png');
+    background-repeat: no-repeat;
+    background-position: -20% 20%;
+    background-size: 75%;
+  }
+
+.headermain::after {
+    height: 900px;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 40%;
+    right: 0;
+    /* background-color: #39572b; */
+
+    z-index: -100;
+}

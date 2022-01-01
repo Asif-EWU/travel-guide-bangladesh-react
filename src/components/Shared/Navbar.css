@@ -1,0 +1,21 @@
+.image-responsive {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.nav-link {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background-color: white;
+}
+
+.green-background {
+    background-color: rgb(249, 255, 248);
+}

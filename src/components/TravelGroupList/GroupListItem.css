@@ -1,0 +1,12 @@
+.group-item-container img {
+    border-radius: 8px;
+}
+
+.group-info {
+    background-color: rgb(243, 250, 242);
+    border-radius: 7px;
+}
+
+.see-more-button {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.comment-image {
+    border-radius: 50%;
+    max-width: 60px;
+}
+
+.comment-body {
+    background-color: rgb(243, 250, 242);
+    border-radius: 7px;
+}

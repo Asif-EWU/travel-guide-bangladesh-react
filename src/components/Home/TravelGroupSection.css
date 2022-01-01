@@ -1,0 +1,29 @@
+.travelGroupSection {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.travel-group-parallax {
+    /* The image used */
+    background-color: rgb(25, 67, 0);
+    background-image: url(../../images/travelGroup/touristGroupBg.png);
+  
+    /* Set a specific height */
+    min-height: 650px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.travelGroupSection .see-more-button {
+    padding: 10px 150px;
+    font-size: x-large;
+    margin-top: 30px; 
+    color: white; 
+    background-color:#436632; 
+    border-radius: 0px;
+}
