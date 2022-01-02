@@ -23,7 +23,7 @@ const GroupSubmit = () => {
         groupFormData.append('like_count', 0);
         groupFormData.append('logo', groupImage);
 
-        fetch('http://localhost:5000/addGroup', {
+        fetch('https://morning-coast-42993.herokuapp.com/addGroup', {
             method: 'POST',
             body: groupFormData
         })

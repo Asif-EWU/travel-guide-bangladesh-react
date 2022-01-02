@@ -25,7 +25,7 @@ const DestinationSubmit = () => {
             destinationFormData.append('destinationImage', destinationImage[i]);
         }
     
-        fetch('http://localhost:5000/addDestination', {
+        fetch('https://morning-coast-42993.herokuapp.com/addDestination', {
             method: 'POST',
             body: destinationFormData
         })

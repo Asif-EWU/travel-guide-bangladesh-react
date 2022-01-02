@@ -17,7 +17,7 @@ const Login = () => {
 
     const handleResponse = (res) => {
         if (res.success) {
-            fetch('http://localhost:5000/checkUser', { 
+            fetch('https://morning-coast-42993.herokuapp.com/checkUser', { 
                 method: 'POST',
                 headers : { 
                     'Content-Type': 'application/json'

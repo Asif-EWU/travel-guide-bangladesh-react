@@ -20,7 +20,7 @@ const PostNewComment = ({ destination, setDestination }) => {
         };
         const comments = [...destination.destination_comments, newComment];
         
-        fetch('http://localhost:5000/updateComment', {
+        fetch('https://morning-coast-42993.herokuapp.com/updateComment', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ destinationId, comments })

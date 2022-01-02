@@ -31,7 +31,7 @@ const BookmarkButton = ({ destination }) => {
         localStorage.setItem("userInfo", JSON.stringify(newUserInfo));      
         loggedInUserDispatch({ type: 'SET_BOOKMARK', bookmarks: newBookmarks });
 
-        fetch('http://localhost:5000/updateBookmark', {
+        fetch('https://morning-coast-42993.herokuapp.com/updateBookmark', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email: loggedInUser.info.email, bookmarks: newBookmarks})

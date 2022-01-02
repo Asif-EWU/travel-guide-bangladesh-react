@@ -15,7 +15,7 @@ const Destination = () => {
     const [destination, setDestination] = useState({});
     
     useEffect(() => {
-        fetch('http://localhost:5000/destination/' + destinationId)
+        fetch('https://morning-coast-42993.herokuapp.com/destination/' + destinationId)
             .then(res => res.json())        
             .then(data => setDestination(data));
     }, [destinationId]);

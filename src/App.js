@@ -35,7 +35,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:5000/groupList')
+    // fetch('http://localhost:5000/groupList')
+    fetch('https://morning-coast-42993.herokuapp.com/groupList')
     .then(res => res.json())
     .then(data => {
       groupListDispatch({ type: 'LOAD_GROUPS', groupList: data });
@@ -43,7 +44,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:5000/destinationList')
+    // fetch('http://localhost:5000/destinationList')
+    fetch('https://morning-coast-42993.herokuapp.com/destinationList')
     .then(res => res.json())
     .then(data => destinationListDispatch({ type: 'LOAD_DESTINATIONS', destinations: data }))
   }, []);

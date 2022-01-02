@@ -40,7 +40,7 @@ const GroupLikeButton = ({ group }) => {
         localStorage.setItem("userInfo", JSON.stringify(newUserInfo));      
         loggedInUserDispatch({ type: 'SET_LIKED_GROUP',  newLikedGroups: newLikedGroups});
 
-        fetch('http://localhost:5000/updateLikedGroup', {
+        fetch('https://morning-coast-42993.herokuapp.com/updateLikedGroup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email: loggedInUser.info.email, likedGroups: newLikedGroups, groupId, likeIncrement})

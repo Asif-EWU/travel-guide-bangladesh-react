@@ -42,7 +42,7 @@ const DestinationLikeButton = ({ destination, setDestination }) => {
         localStorage.setItem("userInfo", JSON.stringify(newUserInfo));      
         loggedInUserDispatch({ type: 'SET_LIKED_DESTINATION', newLikedDestinations: newLikedDestinations });
 
-        fetch('http://localhost:5000/updateLikedDestination', {
+        fetch('https://morning-coast-42993.herokuapp.com/updateLikedDestination', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email: loggedInUser.info.email, likedDestinations: newLikedDestinations, destinationId, likeIncrement})
